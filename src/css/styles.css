@@ -583,7 +583,7 @@
 }
 
 
-
+/*_______ Scroll up _______*/
 .scrollup {
   position:fixed;
   display:inline-flex;
@@ -609,4 +609,16 @@
 
 .show-scroll {
   bottom:3rem;
+}
+
+/*_______ Scroll Bar _______*/
+
+::-webkit-scrollbar{
+  width:.6rem;
+  background:hsl(var(--hue-color), 4%, 53%);
+}
+
+::-webkit-scrollbar-thumb {
+  background:hsl(var(--hue-color), 4%, 29%);
+  border-radius:.5rem;
 }
