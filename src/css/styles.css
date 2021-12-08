@@ -601,7 +601,7 @@
 }
 
 .scrollup__icon {
-  color::#fff;
+  color:#FFF;
   font-size:1rem;
 }
 
@@ -631,8 +631,6 @@
 .change-theme {
   color:var(--first-color);
   font-size:1.15rem;
-  padding:.5rem;
-  background-color:var(--first-color);
   cursor:pointer;
 }
 
