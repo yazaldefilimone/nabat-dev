@@ -581,3 +581,32 @@
   height:2px;
   background-color:var(--first-color);
 }
+
+
+
+.scrollup {
+  position:fixed;
+  display:inline-flex;
+  background-color:var(--first-color);
+  right:1rem;
+  bottom:-30%;
+  padding:.5rem;
+  border-radius:.25rem;
+  z-index:var(--z-tooltip);
+  opacity:.8;
+  transition:.3s;
+}
+
+.scrollup__icon {
+  color::#fff;
+  font-size:1rem;
+}
+
+.scrollup:hover{
+  background-color:var(--first-color-light);
+  opacity:1;
+}
+
+.show-scroll {
+  bottom:3rem;
+}
