@@ -36,7 +36,8 @@
     --text-color-light:hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 61%);
     --body-color: hsl(var(--hue-color), 60%, 99%);;
-    --container-color:#FFF;
+       --container-color:#FFF;
+       --container-color-bg:hsl(var(--hue-color),69%,61%);
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Poppins', sans-serif;
