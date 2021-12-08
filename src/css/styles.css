@@ -749,5 +749,80 @@
   .footer__subscribe{
     width:initial;
   }
+}
 
+
+@media screen and (min-width:992px) {
+  .container{
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .section{
+    padding:8rem 0 1rem;
+  }
+  .section__title,
+  .section__title-center{
+    font-size:var(--h1-font-size);
+  }
+
+  .home {
+    padding:13rem 0 5rem;
+  }
+
+  .home__img,
+  .about__img{
+    width:560px;
+  }
+
+  .home__description{
+    padding-right:7rem;
+  }
+
+
+  .steps__container{
+    grid-template-columns:repeat(3, 1fr);
+  }
+
+
+  .steps__bg{
+    padding:3.5rem 2.5rem;
+  }
+
+  .steps__card-title{
+    font-size:var(--normal-font-size);
+  }
+
+
+  .question__container{
+    padding:1rem 0 4rem;
+  }
+
+  .question__title {
+    text-align:initial;
+  }
+
+  .question__group{
+    row-gap:2rem;
+  }
+
+  .question__header{
+    padding:1rem;
+  }
+
+  .question__description{
+    padding: 0 3.5rem 2.25rem 2.75rem;
+  }
+
+  .footer__title{
+    font-size:var(--h3-font-size);
+  }
+
+  .footer__container{
+    grid-template-columns:1fr .5fr .5fr .5fr;
+  }
+
+  .footer__copy{
+    margin: 7rem 0 2rem;
+  }
 }
