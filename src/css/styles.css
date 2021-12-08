@@ -646,7 +646,6 @@
 
 
 
-
 /*_______ Media Quers _______*/
 @media screen and (max-width:320px) {
   .container{
@@ -682,7 +681,7 @@
 }
 
 
-@media  screen and(min-width:767px){
+@media  screen and (min-width: 767px){
   body {
     margin:0;
   }
@@ -691,45 +690,56 @@
     height:calc(var(--header-height) + 1.5rem);
     column-gap:3rem;
   }
+
   .nav__toggle,
   .nav__close{
     display:none;
   }
 
   .nav__list{
-    flex-direction:row;
+    flex-direction:row;   
     column-gap:3rem;
   }
 
   .nav__menu{
     margin-left:auto;
   }
+
+  .home__container,
   .about__container,
-  .question__container,
   .contact__container,
-  .footer__container,
-  .home__container{
+  .footer__container{
     grid-template-columns:repeat(2, 1fr);
+    column-gap:1rem;
   }
+
   .home__container{
     align-items:center;
   }
+  .home__title{
+    font-size:var(--h1-font-size);
+  }
+
   .home {
     padding:10rem 0 5rem;
   }
 
+  .about__img{
+    width:460px;
+    transform:translateY(5rem);
+  }
   .home__img{
-    width:360px;
+    width:460px;
     order:1;
   }
-
 
   .home__social {
     top:30%;
   }
 
   .question__container{
-    align-items:flex-start;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
   }
 
   .footer__container{
@@ -739,4 +749,5 @@
   .footer__subscribe{
     width:initial;
   }
+
 }
