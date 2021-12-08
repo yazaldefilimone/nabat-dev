@@ -454,22 +454,31 @@
 .nav__logo:hover > span{
   color:var(--title-color);
 }
-/*_______ Services ___
- * ____*/
+/*_______ Services _______*/
 
 .services__container{
   row-gap:3rem;
 }
+
 .services__description {
   text-align:center;
   font-size:var(--small-font-size);
 }
-
+.services__cards {
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:1rem;
+}
 .services__card {
   border-radius:.25rem;
-  padding:1rem;
+  width:5rem;
+  height:5rem;
   border:1px solid var(--first-color);
+  display:flex;
+  flex-direction:column;
   text-align:center;
+
 }
 
 .services__card-text {
@@ -526,7 +535,7 @@
 }
 
 .footer__social {
-  /display:inline-flex;
+  display:inline-flex;
   column-gap:.75rem;
 }
 
@@ -554,4 +563,21 @@
 .footer__copy {
   text-align:center;
   font-size:var(--smaller-font-size);
+  color:var(--text-color-light);
+  margin:5rem 0 1rem;
+}
+
+.active-link {
+  position:relative;
+  color:var(--first-color);
+}
+
+.active-link::after{
+  content:'';
+  position:absolute;
+  bottom:-.5rem;
+  left:0;
+  width:50%;
+  height:2px;
+  background-color:var(--first-color);
 }
