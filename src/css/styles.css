@@ -826,3 +826,33 @@
     margin: 7rem 0 2rem;
   }
 }
+
+
+@media  screen and (min-width:1200px) {
+  .home {
+    right:-3rem;
+    row-gap:4.5rem;
+  }
+
+  .home__social-follow{
+    font-size:var(--small-font-size);
+
+  }
+
+  .home__social-follow::after{
+    width:1.5rem;
+    right:-60%;
+  }
+
+  .home__social-link{
+    font-size:1.15rem;
+  }
+
+  .about__container{
+    column-gap:7rem;
+  }
+
+  .scrollup{
+    right:3rem; 
+  }
+}
