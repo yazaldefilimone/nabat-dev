@@ -149,3 +149,12 @@ the website, in dark theme
   transform:translateX(.25rem);
 
 }
+.button__link {
+  padding:0;
+  background-color:transparent;
+  color:var(--first-color);
+}
+.button__link:hover{
+  background-color:transparent;
+  color:var(--first-color-alt);
+}

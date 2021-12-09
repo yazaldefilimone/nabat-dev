@@ -125,6 +125,35 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
+function toggle(modalViews, modalBtns, modalCloses) {
+
+  const modal = modal => {
+    modalViews[modal].classList.add("active__modal");
+  }
+
+
+  modalBtns.forEach((element, index) => {
+    element.addEventListener("click", _ => {
+      modal(index);
+    });
+  });
+
+
+  modalCloses.forEach( element => {
+    element.addEventListener("click", _ => {
+      modalViews.forEach(view => {
+        view.classList.remove("active__modal");
+      });
+    });
+  });
+
+}
+
+const modalViews = document.querySelectorAll(".services__modal"),
+      modalCloses = document.querySelectorAll(".services__modal-close"),
+      modalBtns = document.querySelectorAll(".services__button");
+toggle(modalViews, modalBtns, modalCloses);
+
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
     origin: 'top',
@@ -139,4 +168,4 @@ sr.reveal(`.home__data`)
 sr.reveal(`.home__social`, {delay: 600})
 sr.reveal(`.about__mg, .contact__box`,{origin: 'left'})
 sr.reveal(`.about__data, .contact__form`,{origin: 'right'})
-sr.reveal(`.steps__card, .product__card, .questions__group, .footer`,{interval: 100})
+sr.reveal(`.services__container,.steps__card, .product__card, .question__group, .footer`,{interval: 100})
