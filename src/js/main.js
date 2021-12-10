@@ -151,10 +151,18 @@ function toggle(modalViews, modalBtns, modalCloses) {
 
 const modalViews = document.querySelectorAll(".services__modal"),
       modalCloses = document.querySelectorAll(".services__modal-close"),
+      props = document.querySelector("form"),
+      footerInput = document.querySelector("footer__input"),
+      propsButton = document.querySelector("form > button"),
       modalBtns = document.querySelectorAll(".services__button");
 toggle(modalViews, modalBtns, modalCloses);
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
+props.addEventListener("submit", () => {
+    alert('oi')
+    props.eventDefault
+})
+
+
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
